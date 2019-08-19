@@ -55,6 +55,8 @@ let inventory = [
   { id: 50, car_make: "Lincoln", car_model: "Town Car", car_year: 1999 }
 ];
 
+
+
 // Example 1 for loop:
 
 // const arr = ['a', 'b', 'c', 'd'];
