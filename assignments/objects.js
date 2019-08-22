@@ -17,6 +17,12 @@ const example = {
   gender: "F",
 }
 
+const example = {
+  id: 1,
+  name: "Mitzi",
+  
+}
+
 // Write your intern objects here:
 
 
