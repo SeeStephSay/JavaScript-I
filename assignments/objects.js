@@ -92,7 +92,7 @@ console.log(antonietta.multiplyNums(3,4));
 // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
 // 4. Give each of the objects the ability to speak their names using the this keyword.
 
-//  I changed their names for fun, but I can change it back if I need to. 
+//  I changed their names and ages for fun, but I can change it back if I need to. 
 
   const parent = {
     name: "Maria",
@@ -100,8 +100,7 @@ console.log(antonietta.multiplyNums(3,4));
     speak: function(greeting) {
       return (`${greeting} me llamo es ${this.name}!`);
     },
-  };
-    const child = {
+    child: {
       name: "Moana",
       age: 50,
       speak: function(greeting) {
@@ -110,25 +109,26 @@ console.log(antonietta.multiplyNums(3,4));
       catchphrase: function(exclamation) {
         return (`${exclamation}, how far I'll go!`);
       },
-    }
-      const grandchild = {
+      grandchild: {
         name: "June",
         age: 30,
         speak: function(greeting) {
           return (`${greeting} my name is ${this.name}!`);
         },
-      };
+      }
+    },
+  };
 
 // Log the parent object's name
 console.log(parent.name);
 // Log the child's age
-console.log(child.age);
+console.log(parent.child.age);
 // Log the name and age of the grandchild
-console.log(grandchild.name, grandchild.age);
+console.log(parent.child.grandchild.name, parent.child.grandchild.age);
 // Have the parent speak
 console.log(parent.speak("Hola, "));
 // Have the child speak
-console.log(child.speak("Aloha, "));
-console.log(child.catchphrase("Oh"));
+console.log(parent.child.speak("Aloha, "));
+console.log(parent.child.catchphrase("Oh"));
 // Have the grandchild speak
-console.log(grandchild.speak("Hello, "));
+console.log(parent.child.grandchild.speak("Hello, "));

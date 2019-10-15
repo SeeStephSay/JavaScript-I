@@ -103,7 +103,9 @@ console.log(lastCarInfo);
 // console.log(lastCar);
 
 // ==== Challenge 3 ====
-// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
+// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console 
+
+//TRY MAP
 let carModels = [];
 // let carModelsSorted = [];
 for (let i = 0; i < inventory.length; i++) {
@@ -132,7 +134,7 @@ console.log(oldCars.length);
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory. Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
-let BMWAndAudi = [];
+// let BMWAndAudi = [];
 let niceCars = inventory.filter(car => car.car_make === "BMW" || car.car_make === "Audi");
 console.log(JSON.stringify(niceCars));
 console.log(niceCars.length);
